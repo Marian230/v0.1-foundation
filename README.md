@@ -8,7 +8,7 @@ Start here to understand current state. Agents then follow [AGENTS.md](AGENTS.md
 
 The foundation consists of operating policy, context/work conventions, Markdown task records, and a local documentation-link check. There is no concrete product architecture to document yet. No external project resources are registered. These statements describe this repository, not every resource on the user's machine.
 
-The bootstrap files are preserved in commit `9b3478f6f78fb86603918e946bc28e5a0aa975a2` on `codex/bootstrap-foundation`. The foundation remains a proposal: no integration approval is recorded, no `master` branch exists, and no remote is configured. The historical bootstrap observations are retained in the bootstrap task. Inspect Git for live branch, commit, working-tree, and remote facts rather than treating this paragraph as a live Git inventory.
+The reviewed foundation is accepted on canonical `master` at observed revision `be3deb07ea3093c2839b33a76257f83510fc722b`, including bootstrap commit `9b3478f6f78fb86603918e946bc28e5a0aa975a2`. The user's reconciliation instruction confirms acceptance and reports that `master` was pushed to the configured remote. Push verification is incomplete: this checkout currently has no configured remote or remote-tracking refs, so the destination and remote revision could not be independently verified. Acceptance evidence and historical proposal observations are retained in the bootstrap task. Inspect Git for live branch, commit, working-tree, and remote facts rather than treating this paragraph as a live Git inventory.
 
 ## Goals and gaps
 
@@ -20,9 +20,8 @@ The bootstrap files are preserved in commit `9b3478f6f78fb86603918e946bc28e5a0aa
 ## Decisions needed and risks
 
 - **Question — first use:** Which concrete project and bounded outcome should exercise the foundation? This determines scope and capabilities. Options: a small software change, a specialized tool/asset workflow, or another concrete project. Recommendation: use the smallest real task the user already needs. No domain is selected by default.
-- **Question — acceptance:** Has the user reviewed and approved this proposed foundation for `master`? Local review is sufficient; adding a remote is not required. Review the exact files/change set before approving integration.
 - **Risk:** documentation and external state can drift. Each task must update materially affected authoritative records and report what it actually verified.
-- **Blocker:** first-use execution awaits the selected outcome and access described in its task. This does not block review of the foundation.
+- **Blocker:** first-use execution awaits the selected outcome and access described in its task.
 
 ## Work index and next action
 
@@ -33,7 +32,7 @@ Task files own status and detailed evidence; this index does not duplicate their
 | [001 — Bootstrap](tasks/001-bootstrap.md) | Scope, validation, acceptance proof, and bootstrap handoff |
 | [002 — First real use](tasks/002-first-use.md) | Exercise the foundation on a user-selected bounded task |
 
-Next: review the proposed foundation, then provide a short first-use brief: desired outcome, where the work belongs, observable success, and relevant access or constraints. There is no independent ready implementation backlog. The first-use task is a justified follow-up, not authorization to start a product.
+Next: provide a short first-use brief: desired outcome, where the work belongs, observable success, and relevant access or constraints. There is no independent ready implementation backlog. The first-use task is a justified follow-up, not authorization to start a product.
 
 No later ideas are currently retained; hypothetical orchestration, generators, and automation are not committed work.
 

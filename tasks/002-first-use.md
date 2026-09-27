@@ -27,4 +27,4 @@ Blocker/unblock condition: the brief is missing. Once supplied, verify capabilit
 
 ## Progress and handoff
 
-No pilot work has started. This follow-up is RECOMMENDED because the bootstrap demonstrates document-level capabilities but has no actual-use evidence. Next action: obtain the brief, then scope the concrete task. Foundation review can proceed independently; no ready product task is implied.
+No pilot work has started. This follow-up is RECOMMENDED because the bootstrap demonstrates document-level capabilities but has no actual-use evidence. Next action: obtain the brief, then scope the concrete task. Foundation acceptance is recorded in the bootstrap task; no ready product task is implied.
