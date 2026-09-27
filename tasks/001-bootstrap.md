@@ -43,7 +43,7 @@ Each row identifies the repository mechanism a fresh agent can inspect. The fina
 
 Required: run the local link check; verify it rejects a broken local link; inspect Git for accidental product/generated/secret artifacts; perform one final semantic consistency/handoff review against all 15 rows, including an external-state scenario and a missing-capability scenario.
 
-Verified on 2026-09-28 in Windows PowerShell-hosted terminal using PowerShell 7.6.5:
+Historical pre-commit validation on 2026-09-28 in Windows PowerShell-hosted terminal using PowerShell 7.6.5 (Git observations below describe that validation-time state):
 
 - `pwsh -NoProfile -File tools/Check-Foundation.ps1`: PASS, all entry points and local inline file links across five Markdown files.
 - Negative check: temporarily created `link-check-probe.md` linking to `missing-bootstrap-probe-target.md`; the same command reported the missing target and exited 1. Removed the probe in `finally`; the clean check then passed. No probe artifacts remain.
@@ -59,6 +59,10 @@ Limits: checks establish this bootstrap's documentation capabilities; they do no
 
 Completed operating policy, human-facing current state, work/context/external-resource conventions, task records, a local link check, and minimal secret-file ignore rules. All acceptance rows are supported by repository contents and the validation above. Current state is in README; no external resource or product state changed.
 
-Files remain uncommitted on `codex/bootstrap-foundation`; there is no Git snapshot, remote PR, or integration approval. The exact review set is `.gitignore`, `AGENTS.md`, `README.md`, `docs/work.md`, `tasks/001-bootstrap.md`, `tasks/002-first-use.md`, and `tools/Check-Foundation.ps1`. Review these files directly; ordinary unstaged `git diff` does not show untracked content. Integrate into `master` only after explicit approval under AGENTS policy. No integration was attempted.
+At the original bootstrap handoff, the files were uncommitted on unborn `codex/bootstrap-foundation`; there was no Git snapshot, remote PR, or integration approval. The exact review set was `.gitignore`, `AGENTS.md`, `README.md`, `docs/work.md`, `tasks/001-bootstrap.md`, `tasks/002-first-use.md`, and `tools/Check-Foundation.ps1`. At that point, ordinary unstaged `git diff` did not show the untracked content. No integration was attempted during bootstrap.
+
+Post-commit reconciliation on 2026-09-28: Git inspection confirmed that all seven foundation files are tracked in commit `9b3478f6f78fb86603918e946bc28e5a0aa975a2` on `codex/bootstrap-foundation`, with a clean working tree before this documentation correction. No `master` branch or configured remote exists, and no integration approval is recorded. README and this handoff are the only corrected records; the historical validation above remains intact. These documentation corrections remain uncommitted on the proposal branch. Review the committed foundation together with the working-tree diff before approving an exact change set. Integrate into `master` only after explicit approval under AGENTS policy.
+
+Reconciliation validation: `pwsh -NoProfile -File tools/Check-Foundation.ps1` passed across five Markdown files; `git diff --check` reported no whitespace errors. Reviewed the documentation diff and remaining references to unborn/uncommitted state: they are historical observations, general policy, or the explicitly uncommitted corrections above. `git status --short`, `git branch -avv`, and `git remote -v` confirmed that only README and this task were modified, the proposal branch still points to the bootstrap commit, and no remote or `master` branch was added. Foundation design and first-use scope/status are unchanged; no integration was performed.
 
 Next action: user review of that change set and selection of a first-use brief. The justified discovery is the need for actual first-use evidence, captured in [002 — First real use](002-first-use.md); it remains blocked and has not started. No speculative infrastructure tasks were added. No known remaining bootstrap work requires HIGH reasoning. Stop here.

@@ -8,7 +8,7 @@ Start here to understand current state. Agents then follow [AGENTS.md](AGENTS.md
 
 The foundation consists of operating policy, context/work conventions, Markdown task records, and a local documentation-link check. There is no concrete product architecture to document yet. No external project resources are registered. These statements describe this repository, not every resource on the user's machine.
 
-Bootstrap inspection found an empty Git repository, an unborn `master`, and no remote. The bootstrap is proposed on `codex/bootstrap-foundation`; it has not been integrated or approved as accepted state. With no initial commit, this branch is an unborn HEAD, not a committed branch snapshot. Inspect Git for live branch, commit, and remote facts rather than treating this paragraph as a live Git inventory.
+The bootstrap files are preserved in commit `9b3478f6f78fb86603918e946bc28e5a0aa975a2` on `codex/bootstrap-foundation`. The foundation remains a proposal: no integration approval is recorded, no `master` branch exists, and no remote is configured. The historical bootstrap observations are retained in the bootstrap task. Inspect Git for live branch, commit, working-tree, and remote facts rather than treating this paragraph as a live Git inventory.
 
 ## Goals and gaps
 
