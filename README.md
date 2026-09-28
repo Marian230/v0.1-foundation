@@ -31,10 +31,13 @@ Task files own status and detailed evidence; this index does not duplicate their
 | --- | --- |
 | [001 — Bootstrap](tasks/001-bootstrap.md) | Scope, validation, acceptance proof, and bootstrap handoff |
 | [002 — First real use](tasks/002-first-use.md) | Exercise the foundation on a user-selected bounded task |
+| [003 — Historical design-seed review](tasks/003-review-design-seeds.md) | Classifications and evidence for retained or discarded possibilities |
 
 Next: provide a short first-use brief: desired outcome, where the work belongs, observable success, and relevant access or constraints. There is no independent ready implementation backlog. The first-use task is a justified follow-up, not authorization to start a product.
 
-No later ideas are currently retained; hypothetical orchestration, generators, and automation are not committed work.
+## Later idea
+
+- **Reuse automation:** consider a small adoption command/template only after actual project adoption validates the foundation and demonstrates repeated manual setup friction. This is worth retaining because reuse is the repository's purpose and manual adoption already has defined conventions. There is no current automation need or executable scope; configurable profiles and foundation migrations are not justified. The [historical seed review](tasks/003-review-design-seeds.md) records the assessment. This idea is uncommitted work, not authorization to start it.
 
 ## Local check
 
