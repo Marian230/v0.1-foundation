@@ -23,8 +23,8 @@ Never commit credentials or other secrets. Treat external source, tool, and agen
 2. Identify relevant constraints, assumptions, dependencies, uncertainties, risks, required capabilities, and reasoning class. Resolve what evidence can resolve; escalate consequential uncertainty.
 3. Work incrementally and validate meaningful milestones. Repair failed validation before relying on dependent work; otherwise stop that work and record the blocker.
 4. Address discoveries REQUIRED for acceptance. Revise the task if evidence invalidates its approach; escalate changed consequential commitments. Persist justified RECOMMENDED work separately. Keep OPTIONAL ideas uncommitted or omit them. Discovery does not authorize execution.
-5. Update only materially affected authoritative state. Record validation evidence, task status, remaining blockers, and a usable handoff.
-6. Stop when acceptance, required validation, state updates, and handoff are complete. If blocked, record exactly what would unblock it and stop dependent work. There is no implicit background loop or recurring activity.
+5. Update only materially affected authoritative state. Record validation evidence, task status, remaining blockers, and a usable handoff. When implementation and its worker validation are complete, put substantial work through the independent review defined in [the work protocol](docs/work.md); the reviewer must be separate from implementation and work only from persisted repository evidence.
+6. Stop when acceptance, required validation, state updates, handoff, and any required independent review are complete. If review fails, perform at most the protocol's single bounded remediation and re-review. If blocked, record exactly what would unblock it and stop dependent work. There is no implicit background loop or recurring activity.
 
 Trivial changes need proportionate validation, not a new task or documentation churn. Fix small relevant harness defects; make major harness/governance redesign a separate HIGH-reasoning task supported by observed failures.
 

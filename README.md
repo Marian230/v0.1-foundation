@@ -8,7 +8,7 @@ Start here to understand current state. Agents then follow [AGENTS.md](AGENTS.md
 
 ## Current reality
 
-The foundation consists of operating policy, context/work conventions, Markdown task records, and a local documentation-link check. There is no concrete product architecture to document yet. No external project resources are registered. These statements describe this repository, not every resource on the user's machine.
+The foundation consists of operating policy, context/work conventions, Markdown task records, a bounded independent-review gate for substantial tasks, and a local documentation-link check. The review gate is repository-native: it records evidence and outcomes but does not launch or orchestrate agents. There is no concrete product architecture to document yet. No external project resources are registered. These statements describe this repository, not every resource on the user's machine.
 
 The reviewed foundation is accepted on canonical `master` and published in the private GitHub repository at `https://github.com/Marian230/v0.1-foundation`. This checkout's `origin` points to that repository, and local `master` tracks `origin/master`. GitHub visibly serves the contextual README and describes the repository as “Reusable agent-first foundation for bounded work, durable project context, validation, and clean handoffs.” Acceptance evidence and historical proposal observations are retained in the bootstrap task; publication evidence is in task 004. Inspect Git for live branch, commit, working-tree, and remote facts rather than treating this paragraph as a live Git inventory.
 
@@ -35,6 +35,7 @@ Task files own status and detailed evidence; this index does not duplicate their
 | [002 — First real use](tasks/002-first-use.md) | Exercise the foundation on a user-selected bounded task |
 | [003 — Historical design-seed review](tasks/003-review-design-seeds.md) | Classifications and evidence for retained or discarded possibilities |
 | [004 — Publish foundation](tasks/004-publish-foundation.md) | Create the GitHub repository and publish canonical `master` |
+| [005 — Independent task review](tasks/005-independent-review.md) | Add bounded evidence-driven review for substantial completed work |
 
 Next: provide a short first-use brief: desired outcome, where the work belongs, observable success, and relevant access or constraints. There is no independent ready implementation backlog. The first-use task is a justified follow-up, not authorization to start a product.
 
