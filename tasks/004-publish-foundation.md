@@ -1,6 +1,6 @@
 # 004 — Publish the foundation to GitHub
 
-Status: in progress
+Status: done
 Reasoning: LOW
 Required capabilities: repository read/write, Git, authenticated GitHub browser access, network access
 
@@ -16,7 +16,7 @@ The user explicitly authorized publication on 2026-09-28 with: “ok, now push i
 
 Git inspection found a clean local `master` at `f93cdea`, with no configured remote. GitHub CLI is not installed. The GitHub web workflow is open but requires the user to authenticate; authentication must not be automated. Repository visibility is also not specified and materially determines external access.
 
-The user authenticated in the GitHub browser and selected private visibility. GitHub repository creation completed at `https://github.com/Marian230/v0.1-foundation`; its clone URL is `https://github.com/Marian230/v0.1-foundation.git`. Local `origin` is configured to that URL. The repository description and `master` publication remain in progress.
+The user authenticated in the GitHub browser and selected private visibility. GitHub repository creation completed at `https://github.com/Marian230/v0.1-foundation`; its clone URL is `https://github.com/Marian230/v0.1-foundation.git`. Local `origin` is configured to that URL.
 
 ## Acceptance and validation
 
@@ -28,6 +28,14 @@ The user authenticated in the GitHub browser and selected private visibility. Gi
 
 ## Progress and handoff
 
-The private GitHub repository has been created and local `origin` configured. The user also requested a generic repository description and a basic contextual README. The existing README already provides the detailed context; a concise adoption sentence was added, and the planned GitHub description is: “Reusable agent-first foundation for bounded work, durable project context, validation, and clean handoffs.”
+Completed the private GitHub repository, configured `origin`, added a concise adoption sentence to the existing contextual README, and set the GitHub description to: “Reusable agent-first foundation for bounded work, durable project context, validation, and clean handoffs.”
 
-Next: validate and commit the publication record on local `master`, push it to `origin/master`, set the GitHub description, verify local/remote revisions and visible repository content, then mark this task done.
+Validation evidence:
+
+- `pwsh -NoProfile -File tools/Check-Foundation.ps1` passed before publication across seven Markdown files; `git diff --check` reported no whitespace errors.
+- `git push -u origin master` succeeded and established local `master` tracking `origin/master` without rewriting history.
+- The authenticated GitHub repository page visibly showed private visibility, the `master` branch, commit `6d6c8cd`, all expected foundation files, and the rendered contextual README after the initial publication push.
+- GitHub's About section visibly showed the requested repository description after saving it.
+- The final completion record is committed and pushed as a normal descendant of the verified publication commit. Completion requires the post-push check to show a clean working tree and identical `HEAD`, `master`, and `origin/master`; live Git is authoritative for their exact final revision.
+
+No product, release, tag, collaborator, GitHub automation, or history rewrite was added. Next justified action remains the user-selected first-use brief in task 002.
